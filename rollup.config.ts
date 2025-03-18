@@ -7,15 +7,12 @@ const outputDir = "dist"
 
 export default defineConfig([
   {
-    input: "src/index.ts",
+    input: "src-cli/index.ts",
     output: [
       {
-        file: `${outputDir}/index.umd.cjs`,
-        format: "cjs",
-      },
-      {
-        file: `${outputDir}/index.es.js`,
-        format: "es",
+        file: `${outputDir}/cli.js`,
+        format: "esm",
+        banner: "#!/usr/bin/env node",
       },
     ],
     plugins: [
@@ -24,11 +21,28 @@ export default defineConfig([
     ],
   },
   {
-    input: "src/index.ts",
+    input: "src-lib/index.ts",
+    output: [
+      {
+        file: `${outputDir}/index.umd.cjs`,
+        format: "cjs",
+      },
+      {
+        file: `${outputDir}/index.esm.js`,
+        format: "esm",
+      },
+    ],
+    plugins: [
+      pluginTypescript(),
+      pluginTerser(),
+    ],
+  },
+  {
+    input: "src-lib/index.ts",
     output: [
       {
         file: `${outputDir}/index.d.ts`,
-        format: "es",
+        format: "esm",
       },
     ],
     plugins: [
