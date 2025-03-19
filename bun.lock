@@ -3,6 +3,9 @@
   "workspaces": {
     "": {
       "name": "@quedevstudios/starter-template",
+      "dependencies": {
+        "cosmiconfig": "^9.0.0",
+      },
       "devDependencies": {
         "@antfu/eslint-config": "^4.10.1",
         "@commitlint/cli": "^19.8.0",
