@@ -1,0 +1,32 @@
+<h1 id="home" align="center">
+  <br>
+  <a href="https://github.com/quedevstudios/please-readme">
+    <img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="please-readme" width="200px" height="auto"/>
+  </a>
+  <br>
+  Please Readme
+  <br>
+</h1>
+
+<h4 align="center">
+  An easy-to-use Readme generator that quickly creates well-structured and professional README files for your projects.
+</h4>
+
+<p align="center">
+  <a href="https://badge.fury.io/js/electron-markdownify">
+    <img src="https://badge.fury.io/js/electron-markdownify.svg" alt="gitter-1">
+  </a>
+  <a href="https://gitter.im/amitmerchant1990/electron-markdownify">
+    <img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg" alt="gitter-2">
+  </a>
+  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
+    <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg" alt="gitter-3">
+  </a>
+  <a href="https://www.paypal.me/AmitMerchant">
+    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat" alt="gitter-4">
+  </a>
+</p>
+
+![Screenshot-1][screenshot-1-image]
+
+[screenshot-1-image]: https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif

@@ -49,7 +49,9 @@
   },
   "scripts": {
     "dev": "bun run ./src-lib/index.ts",
-    "builder": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "build:lib": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "build:templates": "bun run ./scripts/build-templates.ts",
+    "builder": "bun build:templates && bun build:lib",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "release": "semantic-release",
@@ -60,7 +62,9 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "cosmiconfig": "^9.0.0"
+    "aether-bytes": "^1.1.1",
+    "cosmiconfig": "^9.0.0",
+    "handlebars": "^4.7.8"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.10.1",
@@ -72,7 +76,6 @@
     "@types/bun": "^1.2.5",
     "eslint": "^9.22.0",
     "lint-staged": "^15.5.0",
-    "oxc-transform": "^0.60.0",
     "rollup": "^4.36.0",
     "rollup-plugin-dts": "^6.1.1",
     "semantic-release": "^24.2.3",
@@ -104,7 +107,7 @@
           "assets": [
             "package.json"
           ],
-          "message": "chore(release): v${nextRelease.version}\n\n${nextRelease.notes}"
+          "message": "chore(release): v${nextRelease.version} [skip ci]"
         }
       ],
       [
