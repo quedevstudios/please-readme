@@ -1,4 +1,4 @@
-# FEATURES
+# CONFIGS
 
 - [ ] Support various configuration file formats:
   - [ ] please-readme.config.js
