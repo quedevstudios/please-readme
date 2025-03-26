@@ -2,10 +2,11 @@
   "name": "@quedevstudios/please-readme",
   "type": "module",
   "version": "0.0.0",
-  "description": "An easy-to-use Readme generator that quickly creates well-structured and professional README files for your projects.",
+  "description": "An easy-to-use Readme generator that quickly creates well-structured and professional markdown files for your projects.",
   "author": {
     "name": "Blaque Allen",
-    "email": "187586952+quedevstudios@users.noreply.github.com"
+    "email": "187586952+quedevstudios@users.noreply.github.com",
+    "url": "https://quedevstudios.com"
   },
   "license": "MIT",
   "homepage": "https://github.com/quedevstudios/please-readme",
@@ -64,7 +65,8 @@
   "dependencies": {
     "aether-bytes": "^1.1.1",
     "cosmiconfig": "^9.0.0",
-    "handlebars": "^4.7.8"
+    "handlebars": "^4.7.8",
+    "prettier": "^3.5.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.10.1",
