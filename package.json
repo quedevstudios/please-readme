@@ -63,9 +63,12 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "aether-bytes": "^1.1.1",
+    "adm-zip": "^0.5.16",
+    "aether-bytes": "^1.3.0",
     "cosmiconfig": "^9.0.0",
     "handlebars": "^4.7.8",
+    "node-fetch": "^3.3.2",
+    "picocolors": "^1.1.1",
     "prettier": "^3.5.3"
   },
   "devDependencies": {
@@ -75,6 +78,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.2",
     "@semantic-release/git": "^10.0.1",
+    "@types/adm-zip": "^0.5.7",
     "@types/bun": "^1.2.5",
     "eslint": "^9.22.0",
     "lint-staged": "^15.5.0",
