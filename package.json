@@ -52,7 +52,7 @@
     "dev": "bun run ./src-lib/index.ts",
     "build:lib": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "build:templates": "bun run ./scripts/build-templates.ts",
-    "builder": "bun build:templates && bun build:lib",
+    "builder": "bun build:lib",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "release": "semantic-release",
@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "adm-zip": "^0.5.16",
-    "aether-bytes": "^1.3.0",
+    "aether-bytes": "^1.5.0",
     "cosmiconfig": "^9.0.0",
     "handlebars": "^4.7.8",
     "node-fetch": "^3.3.2",

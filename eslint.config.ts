@@ -8,6 +8,8 @@ export default antfu({
     quotes: "double",
   },
 
+  ignores: ["templates/**/*.json"],
+
   rules: {
     "node/prefer-global/buffer": "off",
   },
