@@ -3,10 +3,10 @@
 ## GITHUB
 
 - [ ] Issue Templates (.github/ISSUE_TEMPLATE/file.yml)
-  - [ ] 1 - Bug Report - User
-  - [ ] 2 - Bug Report - Developer
-  - [ ] 3 - Feature Request
-  - [ ] 4 - General Question
+  - [x] 1 - Bug Report - User
+  - [x] 2 - Bug Report - Developer
+  - [x] 3 - Feature Request
+  - [x] 4 - General Question
 
 - [ ] Pull Request Template (.github/PULL_REQUEST_TEMPLATE/file.md)
 
@@ -15,6 +15,8 @@
   - [ ] Code Quality
   - [ ] Code Review
   - [ ] Release
+
+- [x] Code of Conduct (.github/CODE_OF_CONDUCT.md)
 
 ## LICENSE
 

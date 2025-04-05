@@ -1,4 +1,4 @@
-# OVERVIEW
+# DEVELOPMENT ENVIRONMENT
 
 - [x] Configured bun
 - [x] Configured package.json
