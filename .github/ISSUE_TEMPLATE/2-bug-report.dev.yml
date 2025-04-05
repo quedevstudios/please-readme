@@ -1,0 +1,84 @@
+name: 🧪 Bug Report (Dev)
+description: Report a bug found during internal development or testing
+title: "[Dev Bug]: "
+labels: [bug, internal, dev-report]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to report bugs found during internal development or CI.
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Affected Version (if applicable)
+      description: Tag or commit hash where the bug was observed.
+      placeholder: "e.g., v1.3.0 or 47ac0c2"
+    validations:
+      required: false
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Where in the codebase did this occur? (e.g., module/file)
+      placeholder: "e.g., src/generator/pdf.ts"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Summary
+      description: Briefly describe the issue and any context relevant to the bug.
+      placeholder: "While testing the DOCX output generator, the function returned invalid XML..."
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Provide exact steps or link to failing test case/CI job.
+      placeholder: |
+        1. Checkout branch feature/x
+        2. Run `npm run test`
+        3. Observe the failing test on document generation
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Stack Trace / Output
+      description: Paste any logs or output related to the issue.
+      placeholder: |
+        ```
+        Error: Unexpected token < in JSON at position 0
+        at parseJson (/src/utils/parse.ts:10:5)
+        ```
+      render: shell
+
+  - type: checkboxes
+    id: regression
+    attributes:
+      label: Regression?
+      description: Did this work previously?
+      options:
+        - label: Yes, this is a regression from a previous release
+        - label: No, this is a new bug
+        - label: Not sure
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Context or Notes
+      description: Add any investigation notes, related issues, or thoughts.
+
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow this project's [Code of Conduct](../CODE_OF_CONDUCT.md)
+          required: true

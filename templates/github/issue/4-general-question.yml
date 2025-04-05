@@ -1,0 +1,62 @@
+name: ❓ General Question
+description: Ask a question related to usage, implementation, or behavior
+title: "[Question]: "
+labels: [question]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about how something works, best practices, or implementation details? You're in the right place.
+
+  - type: input
+    id: library-version
+    attributes:
+      label: Library Version
+      description: Run `npm ls your-library-name` or check your `package.json`.
+      placeholder: "e.g., 1.2.3"
+    validations:
+      required: false
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: Describe your question in detail.
+      placeholder: |
+        I'm trying to generate a multi-page DOCX report with a custom footer, but...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Include any relevant code snippets, configuration, or related documentation.
+      placeholder: |
+        ```ts
+        generateDocument({
+          type: 'report',
+          footer: 'Confidential',
+          data: [...]
+        });
+        ```
+
+  - type: checkboxes
+    id: tried
+    attributes:
+      label: What Have You Tried?
+      description: Let us know what you’ve looked into before opening this.
+      options:
+        - label: I’ve read the documentation
+        - label: I’ve searched existing issues
+        - label: I’ve asked in discussions (if available)
+
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow this project's [Code of Conduct](../CODE_OF_CONDUCT.md)
+          required: true

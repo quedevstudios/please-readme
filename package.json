@@ -2,7 +2,7 @@
   "name": "@quedevstudios/please-readme",
   "type": "module",
   "version": "0.0.0",
-  "description": "An easy-to-use Readme generator that quickly creates well-structured and professional markdown files for your projects.",
+  "description": "An easy-to-use generator that quickly creates a variety of professional documents for your projects.",
   "author": {
     "name": "Blaque Allen",
     "email": "187586952+quedevstudios@users.noreply.github.com",

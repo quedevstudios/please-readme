@@ -1,0 +1,71 @@
+name: 💡 Feature Request
+description: Suggest a new feature or enhancement for the library
+title: "[Feature]: "
+labels: [enhancement, feature-request]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in improving the library! Please provide details about the feature you’re requesting.
+
+  - type: input
+    id: scope
+    attributes:
+      label: Feature Scope
+      description: What part of the library does this feature affect?
+      placeholder: "e.g., PDF generation, CLI, template engine"
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Clearly describe the proposed feature.
+      placeholder: I’d like to add support for dynamic table generation in PDF documents...
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this feature important? What problem does it solve?
+      placeholder: "Currently, users can't customize headers in DOCX exports..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: usage-example
+    attributes:
+      label: Example Use Case or API
+      description: Show how this feature might be used.
+      placeholder: |
+        ```ts
+        generateDocument({
+          type: 'invoice',
+          data: {...},
+          options: {
+            includeSummaryTable: true
+          }
+        });
+        ```
+
+  - type: checkboxes
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or workarounds?
+      options:
+        - label: I have considered and ruled out alternatives
+        - label: I’m open to suggestions
+
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow this project's [Code of Conduct](../CODE_OF_CONDUCT.md)
+          required: true
